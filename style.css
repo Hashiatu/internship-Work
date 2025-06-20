@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url(assets/bgimage.jpg);
+    background-image:url(assets/pc.avif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@ button {
     font-size: medium;
     color: white;
     background-color: rgb(99, 99, 208);
-    margin-top: 30px;
+    margin-top: 30px;  
     padding: 1.5rem 2rem;
     outline: none;
     border: none;

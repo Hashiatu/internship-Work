@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 239, 244);
+}
+
+.result-container{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 400px;
+
+
+}
+
+.result-container .Right{
+    width: 50%;
+    border-radius:50%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   color: white;
+
+
+}
+.Reaction{
+    background-color: Light red: hsl(0, 100%, 67%);
+    color:
+}
+.Memory{
+    background-color :  Orangey yellow: hsl(39, 100%, 56%);
+    color:
+}
+.Visual{
+    background-color:Green teal: hsl(166, 100%, 37%) ;
+}
+.Verbal{
+    background-color:Cobalt blue: hsl(234, 85%, 45%) ;
+}
+.button{
+    background-color: blue;
+
+}
