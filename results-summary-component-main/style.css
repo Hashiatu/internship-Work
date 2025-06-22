@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:;
+   
 
 }
 
@@ -13,42 +14,142 @@ body{
     width: 100%;
     height: 100vh;
     background-color: rgb(236, 239, 244);
+     border-radius: none;
+     outline: none;
 }
 
 .result-container{
-    width: 700px;
+    /* width: 700px; */
     display: flex;
     flex-direction: row;
     border: 1px solid black;
     border-radius: 20px;
-    height: 400px;
+    /* height: 400px; */
 
 
 }
 
 .result-container .Right{
     width: 50%;
-    border-radius:50%;
+    border-radius: 12px;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
    color: white;
-
+   padding: 20px 0;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   gap: 10px;
 
 }
+
+.result-container .Right h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.result-container .Right .score-total-100{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 10px;
+}
+
+.result-container .Right .score-total-100 h1{
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.result-container .Right .score-total-100 p{
+    font-size: .9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    opacity: .6;
+}
+
+.result-container .Right h2{
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+.result-container .Right p{
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+.result-container .Left{
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+}
+
 .Reaction{
-    background-color: Light red: hsl(0, 100%, 67%);
-    color:
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 7px;
+    color: #ff0000;
+    background-color: #ff000046;
+    border-radius: 20px;
 }
 .Memory{
-    background-color :  Orangey yellow: hsl(39, 100%, 56%);
-    color:
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 20px;
+    background-color: hsla(39, 100%, 56%, 0.2);
+    color: hsl(39, 100%, 56%);
+    padding: 10px 7px;
 }
 .Visual{
-    background-color:Green teal: hsl(166, 100%, 37%) ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsla(166, 100%, 37%, 0.2);
+    color: hsl(166, 100%, 37%);
+    padding: 10px 7px;
+    border-radius: 20px;
 }
 .Verbal{
-    background-color:Cobalt blue: hsl(234, 85%, 45%) ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsla(234, 85%, 45%, 0.2) ;
+    color: hsl(234, 85%, 45%) ;
+    padding: 10px 7px;
+    border-radius: 20px;
 }
-.button{
-    background-color: blue;
+
+.react{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button{
+    background-color:  rgba(0, 0, 255, 0.753);
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
 
 }
