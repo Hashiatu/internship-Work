@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family:;
-   
+    border-radius: none;
+     outline: none;
+     
+
 
 }
 
@@ -13,17 +16,17 @@ body{
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: rgb(236, 239, 244);
-     border-radius: none;
-     outline: none;
+    background-color: hsl(222, 100%, 96%);
+    
 }
 
 .result-container{
     /* width: 700px; */
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+ background-color:hsl(0, 0%, 100%);
     border-radius: 20px;
+
     /* height: 400px; */
 
 
@@ -47,6 +50,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.4em;
     font-weight: 400;
+   
 }
 
 .result-container .Right .score-total-100{
@@ -100,6 +104,14 @@ body{
     width: 50%;
     gap: 20px;
 }
+/* .result-container.Left h3{ */
+    text-align: left;
+    align-items: left ;
+/* } */
+h3{
+    text-align: right;
+    background-color: black;
+}
 
 .Reaction{
     display: flex;
@@ -107,7 +119,7 @@ body{
     width: 100%;
     padding: 10px 7px;
     color: #ff0000;
-    background-color: #ff000046;
+    background-color: #ff00000c;
     border-radius: 20px;
 }
 .Memory{
@@ -115,7 +127,7 @@ body{
     justify-content: space-between;
     width: 100%;
     border-radius: 20px;
-    background-color: hsla(39, 100%, 56%, 0.2);
+    background-color: hsla(39, 100%, 56%, 0.041);
     color: hsl(39, 100%, 56%);
     padding: 10px 7px;
 }
@@ -123,8 +135,9 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: hsla(166, 100%, 37%, 0.2);
-    color: hsl(166, 100%, 37%);
+    
+    background-color: hsla(234, 85%, 45%, 0.044);
+    color: hsl(234, 85%, 45%) ;
     padding: 10px 7px;
     border-radius: 20px;
 }
@@ -132,8 +145,9 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: hsla(234, 85%, 45%, 0.2) ;
-    color: hsl(234, 85%, 45%) ;
+     background-color: hsla(166, 100%, 37%, 0.048);
+     color: hsl(166, 100%, 37%);
+    
     padding: 10px 7px;
     border-radius: 20px;
 }
@@ -145,9 +159,10 @@ body{
 }
 
 button{
-    background-color:  rgba(0, 0, 255, 0.753);
+    background-color:  rgba(0, 0, 172, 0.7);
     color: white;
     width: 100%;
+    height:10%;
     padding: 10px 0;
     border: none;
     border-radius: 20px;
