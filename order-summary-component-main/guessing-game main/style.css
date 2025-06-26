@@ -1,0 +1,16 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 50%;
+
+} 
+.Game-container{
+    max-width: 400px;
+    background-color: rgba(0, 0, 255, 0.621);
+    margin:0;
+    border:1px;
+    padding: 0%;
+    border-radius: 12px;
+    
+
+}
