@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+</head>
+<body>
+    <button onclick="CheckArea ()">Get Area</button>
+
+    
+    <script>
+        function CheckArea (){
+            let area= Math.floor;
+            let shapes= ['rectangle', 'square', 'triangle', 'circle'] 
+           let userInput= prompt("enter the name of the shape")  ;
+          // console.log ("shapes are available are `Rectangle`,`square`,`circle`");
+           //userInput=("enter the name again");
+           function Rectangle(){
+               let value=parseInt(prompt("enter the length"));
+               let width=parseInt(prompt("enter the width"));
+                area = value*width;
+                console.log(`The area of ${userInput} is ${area}`);
+                return area
+                
+            }
+
+            if (userInput == shapes[0]) {
+                console.log(userInput);
+             Rectangle()
+             
+            }else if (userInput==shapes[1]){
+                console.log(userInput);
+                let side = parseInt(prompt("enter the side"));
+                // let width = parseInt(prompt("enter the width"));
+                area = side * side;
+                console.log(`the area of the ${userInput} is ${area}` );
+                return area
+
+            }else if (userInput==shapes[2]){
+console.log(userInput);
+                let height= parseInt(prompt("enter the height"));
+                 let base = parseInt(prompt("enter the base"));
+                area = (base * height)* 0.5 ;
+                console.log(`the area of the ${userInput} is ${area}`);
+                return area
+
+            }else if (userInput==shapes[3]){
+                console.log(userInput);
+                
+                let raduis= parseInt(prompt("enter the raduis"));
+                area = (raduis * raduis)* 3.14 ;
+                console.log(`the area of the ${userInput} is ${area}`);
+                return area
+            }
+                
+
+        }
+  
+    </script>
+</body>
+</html>

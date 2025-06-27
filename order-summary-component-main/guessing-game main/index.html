@@ -4,17 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing game </title>
-<link rel="stylesheet" href="order-summary-component-main/guessing-game main/style.css">
+<link rel="stylesheet" href="/order-summary-component-main/guessing-game main/style.css">
 </head>
 <body>
     <div class="Game-container">
-        <h1>Guessing game </h1>
+        <h1> Number Guessing game </h1>
         <p>Guess a number between 1 and 100:</p>
         <input type="number" id="guessInput" min="1" max="100">
         <button onclick="checkguess()"> Submit Guess</button>
         <div class="message" id="message"></div>
-        <div id="attempts">Attempts:0</div>
+        <div id="attempts">Attempts:0</div> 
     </div>
+    <script> 
+    // variables initialization math.floor to round down numbers
+        let SecretNumber = Math.floor(Math.random() * 100)+1;
+        let attempts = 0; // attempts initialized to 0
+        
+        function checkguess(){
+            // getting the users guess number
+let userInput = parseInt(prompt("enter an integer ")) ;
+  // userInput = ( document.getElementById("userInput").value);  
+ // attempts++ ; // attempts incrementation
+                console.log("Welcome to the Number Guessing Game !")
+        if (isNaN(userInput)){
+            console.log("enter an integer <=100 ")
+        }
+        //restrict letters and numbers greater than 100
+        else if(userInput>100 || userInput<1){
+            console.log("enter a number between 1 and 100");
+        }
+        
+        else if(userInput==SecretNumber){ 
+            console.log("Hurray you got it right")
+            console.log  ("userInput:",userInput)
+            console.log  ("SecretNumber:",SecretNumber)
+            console.log  ("Attempts number:",attempts)
+            
+
+
+        }
+        else if(userInput<SecretNumber){
+            console.log("Try again!Guess Higher")
+            console.log  ("userInput:",userInput)
+            console.log  ("SecretNumber:",SecretNumber)
+            console.log  ("Attempts number:",attempts)
+        }
+        else{
+            console.log ("Try again!Guess Lower")
+            console.log  ("userInput:",userInput)
+            console.log  ("SecretNumber:",SecretNumber)
+            console.log  ("Attempts number:",attempts)
+        }
+        
+
+        }
+        
     
+//display both numbers
+
+       // console.log (prompt("Enter an integer")
+       //prompt use*r to entera number with console
+       //if is num is not same
+       //console should display enter sn integer
+       //else condition
+       // onsole your input...
+       //else confiy
+       //console
+         // console
+    //   //  function Checkguess(){
+    //         let userGuess = parseInt( document.getElementById("guessInput").value);
+    //         attempts++
+    //         document.getElementById("attempts").textContent="Attempts:"+attempts;
+    //         let message=document.getElementById("message")
+    //         if (){
+    //             message.textContent="Congratulations!You guessed the number!:";
+    //             message.style.color = "green"
+    //             disableInput();
+    //             console.log("Congratulations!You guessed the number")
+    //         }
+    //         else if (userGuess<SecretNumber){
+    //             message.textContent="Try again!Guess Higher.";
+    //             message.style.color = "red"
+    //         }
+    //         else{
+    //              message.textContent="Try again!Guess Lower.";
+    //             message.style.color = "red"
+    //         }
+    //     }
+    //     function disableInput(){
+    //         document.getElementById("guessInput").disabled = true;
+    //         document.querySelector("button").disabled = true;
+    //     }
+    </script>
 </body>
 </html>
