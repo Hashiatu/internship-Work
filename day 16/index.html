@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button>Purchase</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+  </head>
+  <body>
+    <button onclick="shoppingCard()">Purchase</button>
     <script>
-         const products = [
-            { id:1, name:"maggi",price:900 },
-             { id:2, name:"tomatoes",price:100 },
-              { id:3, name:"rice",price:1000 },
-               { id:4, name:"meat",price:2500} ,
-                { id:5, name:"bread",price:500 }
-         ];
-         let cart=[];
-    function displayProducts(){
-        console.log("Available Products:");
-        product.forEach(product => {
-            console.log(" ");
-            
-            
-        });
-    }
-          function AddCartItems(items){
-cart.push=(items);
-cart.push=(items);
-console.log("$ items is added successfully to the cart");
 
-          }
-        function RemoveCartItems(items){
-            let index = cart.index(items);
-            if (index !== -1){
-
-            }else 
+      function shoppingCard() {
+      
+        let products = [
+          { id: 1, name: "maggi", price: 900 },
+          { id: 2, name: "tomatoes", price: 100 },
+          { id: 3, name: "rice", price: 1000 },
+          { id: 4, name: "meat", price: 2500 },
+          { id: 5, name: "bread", price: 500 },
+        ];
+         console.log(products.length);
+        //  console.log(products[0].name);
+        for (let i = 0; i < products.length; i++) {
+            // const element = products[i].name;
+            console.log(`enter ${products[i].id} for ${products[i].name}`); 
+            
         }
-    
+
+        // let userInput=prompt("You are welcome to the shooping era, press ok to view products available ");
+
+        let cart = [];
+
+        
+        // function displayProducts() {
+        //   console.log("Available Products:");
+          
+        //   };
+        // }
+        // function AddCartItems(items) {
+        //   //cart.push = items;
+        //   cart.push = items;
+        //   console.log(`${items} is added successfully to the cart`);
+        // }
+
+        let itemstobuy = parseInt(prompt(`enter the item to buy`))
+        if(itemstobuy == products[0].id){
+          console.log("you have chosed to buy", products[0].name)
+          let quantity = parseInt(prompt("enter the quantity of", products[0].name))
+          cart.push({newitem: itemstobuy, quant: quantity})
+                    // console.log("you have purchased the following amount of goods" ,products[0].name,products[0].quant[0]);
+
+        }
+
+        else if(itemstobuy == products[1].id){
+          console.log("you have chosed to buy", products[1].name)
+          let quantity = parseInt(prompt("enter the quantity of", products[1].name))
+          cart.push({newitem: itemstobuy, quant: quantity})
+        }
+
+         else if(itemstobuy == products[2].id){
+          console.log("you have chosed to buy", products[2].name)
+          let quantity = parseInt(prompt("enter the quantity of", products[2].name))
+          cart.push({newitem: itemstobuy, quant: quantity})
+        }
+        
+         else if(itemstobuy == products[3].id){
+          console.log("you have chosed to buy", products[3].name)
+          let quantity = parseInt(prompt("enter the quantity of", products[3].name))
+          cart.push({newitem: itemstobuy, quant: quantity})
+        }
+
+         else if(itemstobuy == products[4].id){
+          console.log("you have chosed to buy", products[4].name)
+          let quantity = parseInt(prompt("enter the quantity of", products[4].name))
+          cart.push({newitem: itemstobuy, quant: quantity})
+        }
+
+        }
+      
     </script>
-</body>
+  </body>
 </html>
