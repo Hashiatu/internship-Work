@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button onclick="shoppingCard()">Purchase</button>
+     <script>
+         function shoppingCard() {
+      
+        let products = [
+          { id: 1, name: "maggi", price: 900 },
+          { id: 2, name: "tomatoes", price: 100 },
+          { id: 3, name: "rice", price: 1000 },
+          { id: 4, name: "meat", price: 2500 },
+          { id: 5, name: "bread", price: 500 },
+        ];
+         console.log(products.length);
+         function displayProducts(){
+            console.log ("Available Products:");
+            products.forEach((products, index)=>{
+                console.log (`${index + 1}.${products.name}-$${products.price}`);
+            });
+         }
+let cart = [];
+let total = 0;
+function addToCart(){
+    displayProducts();
+    const productChoice = prompt("Enter the number of the products you want to buy:");
+    const selectedProduct= products[productChoice - 1] ;
+    if(!selectedProduct){
+        console.log("invalid selection!");
+        return;
+    }
+    console.log(`You have chosen ${selectedProduct.name}`);
+    
+}
+const quantity=parseInt(prompt(`How many ${selectedProduct.name} do you want ?`));
+if (isNaN(quantity)){
+    console.log("please enter a valid number");
+    return;
+}
+const itemTotal = selectedProduct.price * quantity;
+cart.push({
+  name: selectedProduct.name,
+  price: selectedProduct.price,
+  quantity: quantity,
+  itemTotal:itemTotal
+});
+
+ 
+   
+         }
+     </script>
+</body>
+</html>

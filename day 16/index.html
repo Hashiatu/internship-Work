@@ -29,6 +29,7 @@
         // let userInput=prompt("You are welcome to the shooping era, press ok to view products available ");
 
         let cart = [];
+        let total = 0;
 
         
         // function displayProducts() {
@@ -46,36 +47,49 @@
         if(itemstobuy == products[0].id){
           console.log("you have chosed to buy", products[0].name)
           let quantity = parseInt(prompt("enter the quantity of", products[0].name))
-          cart.push({newitem: itemstobuy, quant: quantity})
-                    // console.log("you have purchased the following amount of goods" ,products[0].name,products[0].quant[0]);
+          //cart.push({newitem: itemstobuy, quant: quantity})
+                    // console.log("you have purchased the following amount of goods" ,products[0].name,products[0].quant[0]); 
 
         }
 
         else if(itemstobuy == products[1].id){
           console.log("you have chosed to buy", products[1].name)
           let quantity = parseInt(prompt("enter the quantity of", products[1].name))
-          cart.push({newitem: itemstobuy, quant: quantity})
+          // cart.push({newitem: itemstobuy, quant: quantity})
         }
 
          else if(itemstobuy == products[2].id){
           console.log("you have chosed to buy", products[2].name)
           let quantity = parseInt(prompt("enter the quantity of", products[2].name))
-          cart.push({newitem: itemstobuy, quant: quantity})
+          // cart.push({newitem: itemstobuy, quant: quantity})
         }
         
          else if(itemstobuy == products[3].id){
           console.log("you have chosed to buy", products[3].name)
           let quantity = parseInt(prompt("enter the quantity of", products[3].name))
-          cart.push({newitem: itemstobuy, quant: quantity})
+          // cart.push({newitem: itemstobuy, quant: quantity})
         }
 
          else if(itemstobuy == products[4].id){
           console.log("you have chosed to buy", products[4].name)
           let quantity = parseInt(prompt("enter the quantity of", products[4].name))
-          cart.push({newitem: itemstobuy, quant: quantity})
+          // cart.push({newitem: itemstobuy, quant: quantity})
+        } 
+        else if (isNaN (itemstobuy)){
+          console.log("Unavailable Choice!")
         }
+const itemTotal=itemstobuy.price * quantity;
+cart.push({
+  name: itemstobuy.name,
+  price: itemstobuy.price,
+  quantity: quantity,
+  itemTotal:itemTotal
+});
+ 
+  
 
-        }
+}
+        
       
     </script>
   </body>
